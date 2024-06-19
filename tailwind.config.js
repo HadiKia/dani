@@ -13,6 +13,8 @@ module.exports = {
         yellowLight4: "#FFFBEB",
         textColor: "#040816",
         dark: "#111928",
+        dark5: "#6B7280",
+        dark6: "#9CA3AF",
       },
     },
   },
