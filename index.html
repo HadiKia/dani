@@ -10,13 +10,13 @@
     <!-- header -->
     <div class="bg-white">
       <header
-        class="flex items-center justify-between p-4 md:px-[29px] md:py-[25.56px] font-medium text-primary max-w-screen-xl mx-auto"
+        class="flex items-center justify-between p-4 md:px-[29px] md:py-[25.56px] font-medium text-primary max-w-[1362px] mx-auto"
       >
         <div x-data="{ isOpenMenu: false }">
           <!-- menu button -->
           <button
             @click="isOpenMenu = !isOpenMenu"
-            class="p-1.5 grid place-items-center md:hidden"
+            class="grid place-items-center md:hidden"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -35,12 +35,12 @@
           <div
             x-show="isOpenMenu"
             @click="isOpenMenu = false"
-            class="inset-0 fixed bg-black bg-opacity-40 backdrop-blur-sm"
+            class="inset-0 fixed bg-black bg-opacity-40 backdrop-blur-sm z-10 duration-500"
           ></div>
           <!-- menu item -->
           <div
             :class="isOpenMenu ? 'translate-x-0' : 'translate-x-full' "
-            class="flex flex-col gap-y-2 absolute top-0 right-0 h-screen w-2/3 bg-white duration-500 ease-linear px-4 py-3.5 md:relative md:translate-x-0 md:h-auto md:w-full md:text-nowrap md:flex-row md:items-center md:gap-x-4 md:p-0"
+            class="z-20 flex flex-col gap-y-2 absolute top-0 right-0 h-screen w-2/3 bg-white duration-300 ease-linear px-4 py-3.5 md:relative md:translate-x-0 md:h-auto md:w-full md:text-nowrap md:flex-row md:items-center md:gap-x-4 md:p-0"
           >
             <div
               class="w-full flex items-center justify-between mb-2 md:mb-0 md:ml-2"
@@ -88,24 +88,28 @@
                 </svg>
               </button>
             </div>
-            <button
-              @click="isOpenMenu = false"
-              class="w-full text-right py-1.5 md:py-[13px] md:bg-yellowLight4 md:px-[28px] md:shadow md:rounded-lg active:scale-95 duration-300 ease-linear font-semibold"
+            <ul
+              class="flex flex-col gap-y-2 md:flex-row md:items-center md:gap-x-4"
             >
-              صفحه اصلی
-            </button>
-            <button
-              @click="isOpenMenu = false"
-              class="w-full text-right py-1.5 md:py-[13px] md:bg-yellowLight4 md:px-[28px] md:shadow md:rounded-lg active:scale-95 duration-300 ease-linear"
-            >
-              دوره‌ها
-            </button>
-            <button
-              @click="isOpenMenu = false"
-              class="w-full text-right py-1.5 md:py-[13px] md:bg-yellowLight4 md:px-[28px] md:shadow md:rounded-lg active:scale-95 duration-300 ease-linear"
-            >
-              درباره ما
-            </button>
+              <li
+                @click="isOpenMenu = false"
+                class="py-1.5 md:py-[13px] md:bg-yellowLight4 md:px-[28px] md:shadow md:rounded-lg active:scale-95 duration-300 ease-linear font-semibold"
+              >
+                صفحه اصلی
+              </li>
+              <li
+                @click="isOpenMenu = false"
+                class="py-1.5 md:py-[13px] md:bg-yellowLight4 md:px-[28px] md:shadow md:rounded-lg active:scale-95 duration-300 ease-linear"
+              >
+                دوره‌ها
+              </li>
+              <li
+                @click="isOpenMenu = false"
+                class="py-1.5 md:py-[13px] md:bg-yellowLight4 md:px-[28px] md:shadow md:rounded-lg active:scale-95 duration-300 ease-linear"
+              >
+                درباره ما
+              </li>
+            </ul>
           </div>
         </div>
         <!-- profile button -->
@@ -135,6 +139,36 @@
           </svg>
         </button>
       </header>
+    </div>
+
+    <!-- banner -->
+    <div class="relative">
+      <img
+        src="assets/images/Rectangle5003.png"
+        alt="rectangle"
+        class="absolute min-h-40 md:h-[329px] w-full"
+      />
+      <img
+        src="assets/images/Rectangle5004.png"
+        alt="rectangle"
+        class="min-h-40 md:h-[329px] w-full"
+      />
+      <div
+        class="absolute text-white inset-0 px-5 md:px-[25.56px] xl:px-0 py-6 md:py-[60px] max-w-[1130px] mx-auto"
+      >
+        <h2
+          class="font-bold text-xl mb-3 md:text-4xl lg:text-5xl xl:text-6xl md:mb-[30px]"
+        >
+          دوره تخصصی فیزیک کنکور !
+        </h2>
+        <p
+          class="text-[11px] font-thin leading-6 md:text-sm md:leading-7 lg:text-base lg:leading-8"
+        >
+          دوره تخصصی فیزیک کنکور با بررسی مثال‌های واقعی دوره تخصصی فیزیک کنکور
+          با بررسی مثال‌های واقعی دوره تخصصی فیزیک کنکور با بررسی مثال‌های واقعی
+          .
+        </p>
+      </div>
     </div>
 
     <script
