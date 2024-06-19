@@ -142,7 +142,7 @@
     </div>
 
     <!-- banner -->
-    <div class="relative">
+    <div class="relative mb-8">
       <img
         src="assets/images/Rectangle5003.png"
         alt="rectangle"
@@ -154,7 +154,7 @@
         class="min-h-40 md:h-[329px] w-full"
       />
       <div
-        class="absolute text-white inset-0 px-5 md:px-[25.56px] xl:px-0 py-6 md:py-[60px] max-w-[1130px] mx-auto"
+        class="absolute text-white inset-0 px-5 md:px-[29px] xl:px-0 py-6 md:py-[60px] max-w-[1130px] mx-auto"
       >
         <h2
           class="font-bold text-xl mb-3 md:text-4xl lg:text-5xl xl:text-6xl md:mb-[30px]"
@@ -169,6 +169,445 @@
           .
         </p>
       </div>
+    </div>
+
+    <div
+      class="max-w-[1130px] mx-auto flex flex-col md:flex-row md:items-start md:justify-between px-[29px] xl:px-0"
+    >
+      <div class="flex-1">
+        <!-- video -->
+        <div class="-m-2 xl:-m-3.5 relative mb-2 xl:mb-0">
+          <img src="assets/images/Detail.png" alt="banner" class="w-full" />
+          <button class="absolute inset-0 grid place-items-center">
+            <img src="assets/images/VideoButton.png" alt="play" />
+          </button>
+        </div>
+
+        <!-- description -->
+        <div x-data="{ isOpenDescription: false }" class="mb-4">
+          <div
+            @click="isOpenDescription = !isOpenDescription"
+            :class="isOpenDescription ? 'border-primary' : 'border-yellowLight4'"
+            class="border rounded-md bg-yellowLight4 text-textColor px-4 py-2 font-extrabold transition-all duration-300 ease-linear cursor-pointer mb-2 md:mb-4 lg:px-[30.46px] lg:py-[21.75px] lg:rounded-lg"
+          >
+            <h3>توضیحات دوره:</h3>
+          </div>
+          <div
+            @click="isOpenDescription = !isOpenDescription"
+            :class="isOpenDescription ? 'h-fit ' : 'h-0 !py-0'"
+            class="px-[16.71px] py-[11.4px] bg-white rounded-md text-textColor text-xs leading-[18px] text-justify shadow overflow-hidden transition-all duration-300 ease-linear md:px-[30px] md:py-5 md:text-base lg:text-lg lg:rounded-lg"
+          >
+            <p class="font-medium mb-10 lg:mb-16">
+              ما در آکادمی دانی نو، با محصولات و دوره های آموزشی به هزاران دانش
+              آموز رشته تجربی و ریاضی کمک کرده ایم که با یادگیری مفهومی و با
+              استفاده از تکنیک های تست زنی، به درصدهای بالا و نمره 20 در درس
+              فیزیک برسند.
+            </p>
+
+            <p class="font-medium mb-10 lg:mb-16">
+              ما در آکادمی دانی نو، با محصولات و دوره های آموزشی به هزاران دانش
+              آموز رشته تجربی و ریاضی کمک کرده ایم که با یادگیری مفهومی و با
+              استفاده از تکنیک های تست زنی، به درصدهای بالا و نمره 20 در درس
+              فیزیک برسند. دوره تخصصی فیزیک کنکور با بررسی مثال‌های واقعی دوره
+              تخصصی فیزیک کنکور با بررسی مثال‌های واقعی دوره تخصصی فیزیک کنکور
+              با بررسی مثال‌های واقعی .
+            </p>
+
+            <p class="text-[10px] md:text-sm">
+              دوره تخصصی فیزیک کنکور با بررسی مثال‌های واقعی دوره تخصصی فیزیک
+              کنکور با بررسی مثال‌های واقعی دوره تخصصی فیزیک کنکور با بررسی
+              مثال‌های واقعی. دوره تخصصی فیزیک کنکور با بررسی مثال‌های واقعی
+              دوره تخصصی فیزیک کنکور با بررسی مثال‌های واقعی دوره تخصصی فیزیک
+              کنکور با بررسی مثال‌های واقعی/ دوره تخصصی فیزیک کنکور با بررسی
+              مثال‌های واقعی دوره تخصصی فیزیک کنکور با بررسی مثال‌های واقعی دوره
+              تخصصی فیزیک کنکور با بررسی مثال‌های واقعی . دوره تخصصی فیزیک کنکور
+              با بررسی مثال‌های واقعی دوره تخصصی فیزیک کنکور با بررسی مثال‌های
+              واقعی دوره تخصصی فیزیک کنکور با بررسی مثال‌های واقعی . دوره تخصصی
+              فیزیک کنکور با بررسی مثال‌های واقعی دوره تخصصی فیزیک کنکور با
+              بررسی مثال‌های واقعی دوره تخصصی فیزیک کنکور با بررسی مثال‌های
+              واقعی . دوره تخصصی فیزیک کنکور با بررسی مثال‌های واقعی دوره تخصصی
+              فیزیک کنکور با بررسی مثال‌های واقعی دوره تخصصی فیزیک کنکور با
+              بررسی مثال‌های واقعی .
+            </p>
+          </div>
+        </div>
+
+        <!-- download box -->
+        <!-- season 1 -->
+        <div x-data="{ isOpenSeason: false }" class="text-sm lg:text-base">
+          <div
+            @click="isOpenSeason = !isOpenSeason"
+            :class="isOpenSeason ? 'border-primary !bg-secondary !font-extrabold' : 'border-yellowLight'"
+            class="border rounded-md bg-yellowLight text-textColor px-4 py-2 font-medium md:font-extrabold transition-all duration-200 ease-linear cursor-pointer mb-1.5 md:mb-2 lg:px-[30.46px] lg:py-[21.75px] lg:rounded-lg flex items-center gap-x-2"
+          >
+            <span>فصل اول</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="11"
+              height="11"
+              fill="none"
+            >
+              <path
+                fill="#040816"
+                d="m1.313 5.487 3.293-3.34a.355.355 0 0 1 .509 0 .355.355 0 0 1 0 .509l-2.672 2.72h6.76c.19 0 .35.159.35.35 0 .19-.16.366-.35.366H2.41l2.704 2.751a.355.355 0 0 1 0 .51.361.361 0 0 1-.255.095.316.316 0 0 1-.254-.112l-3.293-3.34a.355.355 0 0 1 0-.509Z"
+              />
+            </svg>
+            <span>ترمودینامیک</span>
+
+            <div class="flex-1 flex justify-end text-left">
+              <svg
+                :class="isOpenSeason ? 'rotate-180' : ''"
+                xmlns="http://www.w3.org/2000/svg"
+                width="11"
+                height="11"
+                fill="none"
+                class="transition-all duration-300 ease-linear lg:scale-150"
+              >
+                <path
+                  fill="#040816"
+                  d="m4.836 9.75-3.34-3.292a.355.355 0 0 1 0-.51.355.355 0 0 1 .509 0l2.72 2.673V1.86c0-.191.159-.35.35-.35.19 0 .366.159.366.35v6.792l2.751-2.704a.355.355 0 0 1 .51 0c.063.063.095.159.095.254s-.032.19-.111.255L5.346 9.75a.355.355 0 0 1-.51 0Z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div :class="isOpenSeason ? 'block mb-7' : 'hidden'">
+            <div
+              class="rounded-md bg-yellowLight4 text-dark px-4 py-2 font-medium cursor-pointer mb-1 md:mb-1.5 lg:px-[30.46px] lg:py-[21.75px] lg:rounded-lg flex items-center justify-between lg:font-bold"
+            >
+              <span>مشاهده ویدیو</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="15"
+                fill="none"
+                class="lg:scale-150"
+              >
+                <g fill="#111928" clip-path="url(#a)">
+                  <path
+                    d="M6.787 11.614c-4.2 0-6.277-4.009-6.362-4.178a.495.495 0 0 1 0-.424c.085-.17 2.163-4.157 6.362-4.157 4.2 0 6.278 3.987 6.362 4.157a.495.495 0 0 1 0 .424c-.084.17-2.163 4.178-6.362 4.178ZM1.4 7.224c.467.784 2.29 3.435 5.387 3.435 3.096 0 4.92-2.65 5.387-3.435-.467-.785-2.29-3.436-5.387-3.436-3.096 0-4.92 2.65-5.387 3.436Z"
+                  />
+                  <path
+                    d="M6.788 9.027a1.801 1.801 0 0 1-1.803-1.803c0-.997.806-1.803 1.803-1.803.997 0 1.803.806 1.803 1.803 0 .997-.806 1.803-1.803 1.803Zm0-2.651a.85.85 0 0 0-.848.848.85.85 0 0 0 .848.848.85.85 0 0 0 .848-.848.85.85 0 0 0-.848-.848Z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 .437h13.573V14.01H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div
+              class="rounded-md bg-yellowLight4 text-dark px-4 py-2 font-medium cursor-pointer mb-1 md:mb-1.5 lg:px-[30.46px] lg:py-[21.75px] lg:rounded-lg flex items-center justify-between lg:font-bold"
+            >
+              <span>آزمون فصل ترمودینامیک</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                fill="none"
+                class="lg:scale-150"
+              >
+                <g fill="#111928" clip-path="url(#a)">
+                  <path
+                    d="M6.787.539A6.4 6.4 0 0 0 .382 6.943c0 3.542 2.863 6.427 6.405 6.427a6.435 6.435 0 0 0 6.426-6.427c0-3.541-2.885-6.404-6.426-6.404Zm0 11.876c-3.012 0-5.45-2.46-5.45-5.472a5.449 5.449 0 0 1 5.45-5.45 5.485 5.485 0 0 1 5.471 5.472c0 2.99-2.46 5.45-5.471 5.45Z"
+                  />
+                  <path
+                    d="M7.168 2.723a2.092 2.092 0 0 0-1.718.466 2.11 2.11 0 0 0-.742 1.612c0 .233.042.467.127.7.085.254.36.382.615.297a.481.481 0 0 0 .297-.615 1.201 1.201 0 0 1-.063-.382c0-.34.148-.658.403-.87.254-.212.593-.318.954-.254.445.085.827.466.912.912.085.53-.191 1.06-.679 1.272-.551.234-.912.785-.912 1.421v1.315c0 .255.212.488.488.488a.493.493 0 0 0 .488-.488V7.282c0-.233.127-.445.318-.53A2.112 2.112 0 0 0 8.928 4.44c-.233-.87-.912-1.569-1.76-1.717ZM6.807 9.87h-.063a.493.493 0 0 0-.488.488.48.48 0 0 0 .488.487h.063a.476.476 0 0 0 .467-.487c0-.276-.191-.488-.467-.488Z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 .157h13.573V13.73H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- season 2 -->
+        <div x-data="{ isOpenSeason: false }" class="text-sm lg:text-base">
+          <div
+            @click="isOpenSeason = !isOpenSeason"
+            :class="isOpenSeason ? 'border-primary !bg-secondary !font-extrabold' : 'border-yellowLight'"
+            class="border rounded-md bg-yellowLight text-textColor px-4 py-2 font-medium md:font-extrabold transition-all duration-200 ease-linear cursor-pointer mb-1.5 md:mb-2 lg:px-[30.46px] lg:py-[21.75px] lg:rounded-lg flex items-center gap-x-2"
+          >
+            <span>فصل دوم</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="11"
+              height="11"
+              fill="none"
+            >
+              <path
+                fill="#040816"
+                d="m1.313 5.487 3.293-3.34a.355.355 0 0 1 .509 0 .355.355 0 0 1 0 .509l-2.672 2.72h6.76c.19 0 .35.159.35.35 0 .19-.16.366-.35.366H2.41l2.704 2.751a.355.355 0 0 1 0 .51.361.361 0 0 1-.255.095.316.316 0 0 1-.254-.112l-3.293-3.34a.355.355 0 0 1 0-.509Z"
+              />
+            </svg>
+            <span>الکتریسته</span>
+
+            <div class="flex-1 flex justify-end text-left">
+              <svg
+                :class="isOpenSeason ? 'rotate-180' : ''"
+                xmlns="http://www.w3.org/2000/svg"
+                width="11"
+                height="11"
+                fill="none"
+                class="transition-all duration-300 ease-linear lg:scale-150"
+              >
+                <path
+                  fill="#040816"
+                  d="m4.836 9.75-3.34-3.292a.355.355 0 0 1 0-.51.355.355 0 0 1 .509 0l2.72 2.673V1.86c0-.191.159-.35.35-.35.19 0 .366.159.366.35v6.792l2.751-2.704a.355.355 0 0 1 .51 0c.063.063.095.159.095.254s-.032.19-.111.255L5.346 9.75a.355.355 0 0 1-.51 0Z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div :class="isOpenSeason ? 'block mb-7' : 'hidden'">
+            <div
+              class="rounded-md bg-yellowLight4 text-dark px-4 py-2 font-medium cursor-pointer mb-1 md:mb-1.5 lg:px-[30.46px] lg:py-[21.75px] lg:rounded-lg flex items-center justify-between lg:font-bold"
+            >
+              <span>مشاهده ویدیو</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="15"
+                fill="none"
+                class="lg:scale-150"
+              >
+                <g fill="#111928" clip-path="url(#a)">
+                  <path
+                    d="M6.787 11.614c-4.2 0-6.277-4.009-6.362-4.178a.495.495 0 0 1 0-.424c.085-.17 2.163-4.157 6.362-4.157 4.2 0 6.278 3.987 6.362 4.157a.495.495 0 0 1 0 .424c-.084.17-2.163 4.178-6.362 4.178ZM1.4 7.224c.467.784 2.29 3.435 5.387 3.435 3.096 0 4.92-2.65 5.387-3.435-.467-.785-2.29-3.436-5.387-3.436-3.096 0-4.92 2.65-5.387 3.436Z"
+                  />
+                  <path
+                    d="M6.788 9.027a1.801 1.801 0 0 1-1.803-1.803c0-.997.806-1.803 1.803-1.803.997 0 1.803.806 1.803 1.803 0 .997-.806 1.803-1.803 1.803Zm0-2.651a.85.85 0 0 0-.848.848.85.85 0 0 0 .848.848.85.85 0 0 0 .848-.848.85.85 0 0 0-.848-.848Z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 .437h13.573V14.01H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div
+              class="rounded-md bg-yellowLight4 text-dark px-4 py-2 font-medium cursor-pointer mb-1 md:mb-1.5 lg:px-[30.46px] lg:py-[21.75px] lg:rounded-lg flex items-center justify-between lg:font-bold"
+            >
+              <span>آزمون فصل الکتریسته</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                fill="none"
+                class="lg:scale-150"
+              >
+                <g fill="#111928" clip-path="url(#a)">
+                  <path
+                    d="M6.787.539A6.4 6.4 0 0 0 .382 6.943c0 3.542 2.863 6.427 6.405 6.427a6.435 6.435 0 0 0 6.426-6.427c0-3.541-2.885-6.404-6.426-6.404Zm0 11.876c-3.012 0-5.45-2.46-5.45-5.472a5.449 5.449 0 0 1 5.45-5.45 5.485 5.485 0 0 1 5.471 5.472c0 2.99-2.46 5.45-5.471 5.45Z"
+                  />
+                  <path
+                    d="M7.168 2.723a2.092 2.092 0 0 0-1.718.466 2.11 2.11 0 0 0-.742 1.612c0 .233.042.467.127.7.085.254.36.382.615.297a.481.481 0 0 0 .297-.615 1.201 1.201 0 0 1-.063-.382c0-.34.148-.658.403-.87.254-.212.593-.318.954-.254.445.085.827.466.912.912.085.53-.191 1.06-.679 1.272-.551.234-.912.785-.912 1.421v1.315c0 .255.212.488.488.488a.493.493 0 0 0 .488-.488V7.282c0-.233.127-.445.318-.53A2.112 2.112 0 0 0 8.928 4.44c-.233-.87-.912-1.569-1.76-1.717ZM6.807 9.87h-.063a.493.493 0 0 0-.488.488.48.48 0 0 0 .488.487h.063a.476.476 0 0 0 .467-.487c0-.276-.191-.488-.467-.488Z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 .157h13.573V13.73H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- season 3 -->
+        <div x-data="{ isOpenSeason: false }" class="text-sm lg:text-base">
+          <div
+            @click="isOpenSeason = !isOpenSeason"
+            :class="isOpenSeason ? 'border-primary !bg-secondary !font-extrabold' : 'border-yellowLight'"
+            class="border rounded-md bg-yellowLight text-textColor px-4 py-2 font-medium md:font-extrabold transition-all duration-200 ease-linear cursor-pointer mb-1.5 md:mb-2 lg:px-[30.46px] lg:py-[21.75px] lg:rounded-lg flex items-center gap-x-2"
+          >
+            <span>فصل سوم</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="11"
+              height="11"
+              fill="none"
+            >
+              <path
+                fill="#040816"
+                d="m1.313 5.487 3.293-3.34a.355.355 0 0 1 .509 0 .355.355 0 0 1 0 .509l-2.672 2.72h6.76c.19 0 .35.159.35.35 0 .19-.16.366-.35.366H2.41l2.704 2.751a.355.355 0 0 1 0 .51.361.361 0 0 1-.255.095.316.316 0 0 1-.254-.112l-3.293-3.34a.355.355 0 0 1 0-.509Z"
+              />
+            </svg>
+            <span>دما و انرژي</span>
+
+            <div class="flex-1 flex justify-end text-left">
+              <svg
+                :class="isOpenSeason ? 'rotate-180' : ''"
+                xmlns="http://www.w3.org/2000/svg"
+                width="11"
+                height="11"
+                fill="none"
+                class="transition-all duration-300 ease-linear lg:scale-150"
+              >
+                <path
+                  fill="#040816"
+                  d="m4.836 9.75-3.34-3.292a.355.355 0 0 1 0-.51.355.355 0 0 1 .509 0l2.72 2.673V1.86c0-.191.159-.35.35-.35.19 0 .366.159.366.35v6.792l2.751-2.704a.355.355 0 0 1 .51 0c.063.063.095.159.095.254s-.032.19-.111.255L5.346 9.75a.355.355 0 0 1-.51 0Z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div :class="isOpenSeason ? 'block mb-7' : 'hidden'">
+            <div
+              class="rounded-md bg-yellowLight4 text-dark px-4 py-2 font-medium cursor-pointer mb-1 md:mb-1.5 lg:px-[30.46px] lg:py-[21.75px] lg:rounded-lg flex items-center justify-between lg:font-bold"
+            >
+              <span>مشاهده ویدیو</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="15"
+                fill="none"
+                class="lg:scale-150"
+              >
+                <g fill="#111928" clip-path="url(#a)">
+                  <path
+                    d="M6.787 11.614c-4.2 0-6.277-4.009-6.362-4.178a.495.495 0 0 1 0-.424c.085-.17 2.163-4.157 6.362-4.157 4.2 0 6.278 3.987 6.362 4.157a.495.495 0 0 1 0 .424c-.084.17-2.163 4.178-6.362 4.178ZM1.4 7.224c.467.784 2.29 3.435 5.387 3.435 3.096 0 4.92-2.65 5.387-3.435-.467-.785-2.29-3.436-5.387-3.436-3.096 0-4.92 2.65-5.387 3.436Z"
+                  />
+                  <path
+                    d="M6.788 9.027a1.801 1.801 0 0 1-1.803-1.803c0-.997.806-1.803 1.803-1.803.997 0 1.803.806 1.803 1.803 0 .997-.806 1.803-1.803 1.803Zm0-2.651a.85.85 0 0 0-.848.848.85.85 0 0 0 .848.848.85.85 0 0 0 .848-.848.85.85 0 0 0-.848-.848Z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 .437h13.573V14.01H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div
+              class="rounded-md bg-yellowLight4 text-dark px-4 py-2 font-medium cursor-pointer mb-1 md:mb-1.5 lg:px-[30.46px] lg:py-[21.75px] lg:rounded-lg flex items-center justify-between lg:font-bold"
+            >
+              <span>آزمون فصل دما و انرژي</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                fill="none"
+                class="lg:scale-150"
+              >
+                <g fill="#111928" clip-path="url(#a)">
+                  <path
+                    d="M6.787.539A6.4 6.4 0 0 0 .382 6.943c0 3.542 2.863 6.427 6.405 6.427a6.435 6.435 0 0 0 6.426-6.427c0-3.541-2.885-6.404-6.426-6.404Zm0 11.876c-3.012 0-5.45-2.46-5.45-5.472a5.449 5.449 0 0 1 5.45-5.45 5.485 5.485 0 0 1 5.471 5.472c0 2.99-2.46 5.45-5.471 5.45Z"
+                  />
+                  <path
+                    d="M7.168 2.723a2.092 2.092 0 0 0-1.718.466 2.11 2.11 0 0 0-.742 1.612c0 .233.042.467.127.7.085.254.36.382.615.297a.481.481 0 0 0 .297-.615 1.201 1.201 0 0 1-.063-.382c0-.34.148-.658.403-.87.254-.212.593-.318.954-.254.445.085.827.466.912.912.085.53-.191 1.06-.679 1.272-.551.234-.912.785-.912 1.421v1.315c0 .255.212.488.488.488a.493.493 0 0 0 .488-.488V7.282c0-.233.127-.445.318-.53A2.112 2.112 0 0 0 8.928 4.44c-.233-.87-.912-1.569-1.76-1.717ZM6.807 9.87h-.063a.493.493 0 0 0-.488.488.48.48 0 0 0 .488.487h.063a.476.476 0 0 0 .467-.487c0-.276-.191-.488-.467-.488Z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 .157h13.573V13.73H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- season 4 -->
+        <div x-data="{ isOpenSeason: false }" class="text-sm lg:text-base">
+          <div
+            @click="isOpenSeason = !isOpenSeason"
+            :class="isOpenSeason ? 'border-primary !bg-secondary !font-extrabold' : 'border-yellowLight'"
+            class="border rounded-md bg-yellowLight text-textColor px-4 py-2 font-medium md:font-extrabold transition-all duration-200 ease-linear cursor-pointer mb-1.5 md:mb-2 lg:px-[30.46px] lg:py-[21.75px] lg:rounded-lg flex items-center gap-x-2"
+          >
+            <span>فصل چهارم</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="11"
+              height="11"
+              fill="none"
+            >
+              <path
+                fill="#040816"
+                d="m1.313 5.487 3.293-3.34a.355.355 0 0 1 .509 0 .355.355 0 0 1 0 .509l-2.672 2.72h6.76c.19 0 .35.159.35.35 0 .19-.16.366-.35.366H2.41l2.704 2.751a.355.355 0 0 1 0 .51.361.361 0 0 1-.255.095.316.316 0 0 1-.254-.112l-3.293-3.34a.355.355 0 0 1 0-.509Z"
+              />
+            </svg>
+            <span>امواج</span>
+
+            <div class="flex-1 flex justify-end text-left">
+              <svg
+                :class="isOpenSeason ? 'rotate-180' : ''"
+                xmlns="http://www.w3.org/2000/svg"
+                width="11"
+                height="11"
+                fill="none"
+                class="transition-all duration-300 ease-linear lg:scale-150"
+              >
+                <path
+                  fill="#040816"
+                  d="m4.836 9.75-3.34-3.292a.355.355 0 0 1 0-.51.355.355 0 0 1 .509 0l2.72 2.673V1.86c0-.191.159-.35.35-.35.19 0 .366.159.366.35v6.792l2.751-2.704a.355.355 0 0 1 .51 0c.063.063.095.159.095.254s-.032.19-.111.255L5.346 9.75a.355.355 0 0 1-.51 0Z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div :class="isOpenSeason ? 'block mb-7' : 'hidden'">
+            <div
+              class="rounded-md bg-yellowLight4 text-dark px-4 py-2 font-medium cursor-pointer mb-1 md:mb-1.5 lg:px-[30.46px] lg:py-[21.75px] lg:rounded-lg flex items-center justify-between lg:font-bold"
+            >
+              <span>مشاهده ویدیو</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="15"
+                fill="none"
+                class="lg:scale-150"
+              >
+                <g fill="#111928" clip-path="url(#a)">
+                  <path
+                    d="M6.787 11.614c-4.2 0-6.277-4.009-6.362-4.178a.495.495 0 0 1 0-.424c.085-.17 2.163-4.157 6.362-4.157 4.2 0 6.278 3.987 6.362 4.157a.495.495 0 0 1 0 .424c-.084.17-2.163 4.178-6.362 4.178ZM1.4 7.224c.467.784 2.29 3.435 5.387 3.435 3.096 0 4.92-2.65 5.387-3.435-.467-.785-2.29-3.436-5.387-3.436-3.096 0-4.92 2.65-5.387 3.436Z"
+                  />
+                  <path
+                    d="M6.788 9.027a1.801 1.801 0 0 1-1.803-1.803c0-.997.806-1.803 1.803-1.803.997 0 1.803.806 1.803 1.803 0 .997-.806 1.803-1.803 1.803Zm0-2.651a.85.85 0 0 0-.848.848.85.85 0 0 0 .848.848.85.85 0 0 0 .848-.848.85.85 0 0 0-.848-.848Z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 .437h13.573V14.01H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div
+              class="rounded-md bg-yellowLight4 text-dark px-4 py-2 font-medium transition-all duration-300 ease-linear overflow-hidden cursor-pointer mb-1 md:mb-1.5 lg:px-[30.46px] lg:py-[21.75px] lg:rounded-lg flex items-center justify-between lg:font-bold"
+            >
+              <span>آزمون فصل امواج</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                fill="none"
+                class="lg:scale-150"
+              >
+                <g fill="#111928" clip-path="url(#a)">
+                  <path
+                    d="M6.787.539A6.4 6.4 0 0 0 .382 6.943c0 3.542 2.863 6.427 6.405 6.427a6.435 6.435 0 0 0 6.426-6.427c0-3.541-2.885-6.404-6.426-6.404Zm0 11.876c-3.012 0-5.45-2.46-5.45-5.472a5.449 5.449 0 0 1 5.45-5.45 5.485 5.485 0 0 1 5.471 5.472c0 2.99-2.46 5.45-5.471 5.45Z"
+                  />
+                  <path
+                    d="M7.168 2.723a2.092 2.092 0 0 0-1.718.466 2.11 2.11 0 0 0-.742 1.612c0 .233.042.467.127.7.085.254.36.382.615.297a.481.481 0 0 0 .297-.615 1.201 1.201 0 0 1-.063-.382c0-.34.148-.658.403-.87.254-.212.593-.318.954-.254.445.085.827.466.912.912.085.53-.191 1.06-.679 1.272-.551.234-.912.785-.912 1.421v1.315c0 .255.212.488.488.488a.493.493 0 0 0 .488-.488V7.282c0-.233.127-.445.318-.53A2.112 2.112 0 0 0 8.928 4.44c-.233-.87-.912-1.569-1.76-1.717ZM6.807 9.87h-.063a.493.493 0 0 0-.488.488.48.48 0 0 0 .488.487h.063a.476.476 0 0 0 .467-.487c0-.276-.191-.488-.467-.488Z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 .157h13.573V13.73H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-1">سبد خرید</div>
     </div>
 
     <script

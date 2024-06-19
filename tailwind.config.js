@@ -4,14 +4,15 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans : ["iransans"],
+        sans: ["iransans"],
       },
       colors: {
         primary: "#132662",
         secondary: "#FEB41C",
         yellowLight: "#FCD34D",
         yellowLight4: "#FFFBEB",
-        textColor : "#040816"
+        textColor: "#040816",
+        dark: "#111928",
       },
     },
   },
