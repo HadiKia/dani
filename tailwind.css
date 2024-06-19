@@ -1,4 +1,21 @@
-@import url('/assets/css/fonts.css');
+@import url("/assets/css/fonts.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  [type="text"],
+  [type="number"] {
+    @apply outline-none border border-primary placeholder:text-primary px-[7px] py-[3.25px] rounded-sm md:px-7 md:py-3 md:rounded-lg md:text-base;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
