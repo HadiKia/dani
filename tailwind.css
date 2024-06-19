@@ -6,7 +6,7 @@
 @layer base {
   [type="text"],
   [type="number"] {
-    @apply outline-none border border-primary placeholder:text-primary px-[7px] py-[3.25px] rounded-sm md:px-7 md:py-3 md:rounded-lg md:text-base;
+    @apply outline-none border border-primary placeholder:text-primary px-[7px] py-[3.25px] rounded-sm md:px-7 md:py-3 md:rounded-lg text-xs md:text-base;
   }
 }
 
@@ -18,4 +18,8 @@ input::-webkit-inner-spin-button {
 
 input[type="number"] {
   -moz-appearance: textfield;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
